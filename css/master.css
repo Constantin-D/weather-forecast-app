@@ -81,10 +81,11 @@ h1 {
 }
 
 .spinner {
-    width: 3.125rem;
-    height: 3.125rem;
-    border: 0.3125rem solid transparent;
-    border-top: 0.3125rem solid var(--primary-color);
+    width: clamp(3.125rem, 8vw, 6rem);
+    height: clamp(3.125rem, 8vw, 6rem);
+    border: clamp(0.3125rem, 0.8vw, 0.5rem) solid transparent;
+    border-top: clamp(0.3125rem, 0.8vw, 0.5rem) solid var(--primary-color);
+    border-right: clamp(0.3125rem, 0.8vw, 0.5rem) solid var(--primary-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
